@@ -4,12 +4,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Джаваскрипт</title>
-    <script src="assets/main.js"></script>
+    <title>js</title>
 </head>
 
 <body>
-    <img src="img2.png" alt="">
+    <!-- <input type="button" value="Запусти цикл" onclick="count()">
+
+    <script>
+        function count() {
+            for (let i = 1; i <= 3; i++) {
+                alert("свага " + i)
+            }
+        }
+    </script>
+
+    <button id="color">
+        Нажми на меня!
+    </button>
+
+    <script>
+        let button = document.getElementById('color');
+        const colors = ['#ff0000', '#00ff00', '#0000ff'];
+        let arrayIndex = 0;
+
+        function bodyColor() {
+            arrayIndex = (arrayIndex + 1) % colors.length;
+            document.body.style.backgroundColor = colors[arrayIndex];
+        }
+        button.addEventListener("mouseover", bodyColor);
+    </script>
+
+     -->
+    <!-- <script>
+        window.addEventListener("keydown", event => {
+            switch (event.key.toLocaleLowerCase()) {
+                case 'r':
+                    document.body.style.backgroundColor = 'red';
+                    break;
+                case 'g':
+                    document.body.style.backgroundColor = 'green';
+                    break;
+                case 'b':
+                    document.body.style.backgroundColor = 'blue';
+                    break;
+                default:
+                    return;
+            }
+        }
+        )
+    </script>
+
+    <input type="button" value="Нажми наvtyz" id="element">
+
+    <script>
+        element.onclick = function (event) {
+            alert(event.type + " на " + event.currentTarget);
+            alert("Координаты: " + event.clientX + ":" + event.clientY)
+        }
+    </script> -->
+
+    <img src="img3.png" alt="">
+
+    <button id="coolButton">Нажмите меня</button>
+
+    <script>
+        const button = document.getElementById('coolButton')
+        button.addEventListener('click', function () {
+            button.textContent = 'Вы нажали на меня'
+        }
+        )
+    </script>
+
+    <div id="follower"
+        style="position: absolute; width: 50px; height: 50px; background-color: red; pointer-events: none;"></div>
+
+    <script>
+        const follower = document.getElementById('follower');
+
+        document.addEventListener('mousemove', function (e) {
+            follower.style.left = e.clientX + 'px';
+            follower.style.top = e.clientY + 'px';
+        });
+    </script>
 </body>
 
 </html>
